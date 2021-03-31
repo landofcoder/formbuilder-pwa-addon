@@ -1,8 +1,8 @@
 # Formbuilder Pro for PWA-Studio
 
-Magento 2 Formbuilder Extension attracts more target audiences to the online store through quality content.
+Magento 2 Form Builder with drag n drop & visual interface lets you build multiple forms in minutes.
 
-Moreover, you can also improve your marketing efforts and smoothly transfer promotion messages to your beloved customers and eventually, boost the sale of your website and earn more benefits. With many improved additional features comparing to the Magento 2 Formbuilder extension free version, Magento 2 Blog Extension will not disappoint you.
+This module helps to create multiple website forms quickly and effectively to gather customers’ information. No specialized knowledge or coding experience required, Store owners can believe that it won’t take long and take much effort to get used to the system.
 
 ## Installation Environment
 Require magento 2.4.x or above.
@@ -14,5 +14,5 @@ and add ```"@landofcoder/formbuilder-module": "1.0.0"``` in dependencies venia-c
 - Run ```yarn install``` to install dependencies
 - Run pwa project ```yarn watch:all```
 See result of formbuilder module : http://0.0.0.0:10000/forms.html
-## Demo Blog Pro
+## Demo Formbuilder PWA
 https://demo-pwa.landofcoder.com/forms.html

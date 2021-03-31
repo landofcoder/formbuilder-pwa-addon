@@ -1,19 +1,19 @@
 import React, {useCallback, useMemo, useState} from 'react'
 import { useForm } from '../../talons/useForm'
 import BreadCrumb from '../breadcrumb/index';
-import classes from './home.css';
+import classes from './form.css';
 import { Title, Meta } from '@magento/venia-ui/lib/components/Head';
 import { Util } from '@magento/peregrine';
 const { BrowserPersistence } = Util;
 const storage = new BrowserPersistence();
 
-const FormView = props => {
+const Form = props => {
     const { formUrl = "" } = useParams();
     const standardizedUrl = formUrl.replace(".html", "")
     const title = "View Form"
     const titleName = title
     const description = "View form description"
-    const form_title = "Contact Form"
+    const form_title = "Form: Contact Form"
 
     const talonProps = useForm({ formUrl });
     const {
@@ -27,12 +27,11 @@ const FormView = props => {
             <BreadCrumb items={
                 [
                     {
-                        label: 'Forms'
-                    }
-                ],
-                [
+                        label: 'Forms',
+                        path: '/forms.html'
+                    },
                     {
-                        label: 'Form: '+form_title
+                        label: form_title,
                     }
                 ]
             }
@@ -50,4 +49,4 @@ const FormView = props => {
     )
 }
 
-export default FormView
+export default Form
