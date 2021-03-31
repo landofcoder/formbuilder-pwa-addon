@@ -1,4 +1,5 @@
 import React, {useCallback, useMemo, useState} from 'react'
+import { useForm } from '../../talons/useForm'
 import BreadCrumb from '../breadcrumb/index';
 import classes from './home.css';
 import { Title, Meta } from '@magento/venia-ui/lib/components/Head';
@@ -7,10 +8,18 @@ const { BrowserPersistence } = Util;
 const storage = new BrowserPersistence();
 
 const FormView = props => {
+    const { formUrl = "" } = useParams();
+    const standardizedUrl = formUrl.replace(".html", "")
     const title = "View Form"
     const titleName = title
     const description = "View form description"
     const form_title = "Contact Form"
+
+    const talonProps = useForm({ formUrl });
+    const {
+        resultData,
+        resultLoading
+    } = talonProps
     return (
         <div className={classes.mainCtn}>
             <Title>{title}</Title>

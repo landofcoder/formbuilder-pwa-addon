@@ -15,3 +15,7 @@ export const POST_FORM_DATA = ggl`
 export const GET_FORM_MESSAGES = ggl`
 
 `;
+
+export const GET_FORM_BY_IDENTIFIER = ggl`
+
+`;
